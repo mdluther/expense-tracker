@@ -9,7 +9,11 @@ html {
 }
 
 body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   align-content: center;
+  text-align: center;
   margin: 0;
   background-color: #24272e;
   color: #dddddd;

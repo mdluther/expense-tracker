@@ -9,7 +9,9 @@ const ExpenseForm = () => {
   });
 
   const formChangeHandler = (event) => {
-    setUserInput({ ...userInput, [event.target.name]: event.target.value });
+    setUserInput((prev) => {
+      return { ...userInput, [event.target.name]: event.target.value };
+    });
     console.log(userInput);
   };
 

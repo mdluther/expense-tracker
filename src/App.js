@@ -29,7 +29,7 @@ const App = () => {
   return (
     <div>
       <ThreeCanvas />
-      <h2 class="main-heading">Let's get started!</h2>
+      <h2>Let's get started!</h2>
       <NewExpense />
       <Expenses items={expenses} />
     </div>
