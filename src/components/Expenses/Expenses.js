@@ -10,8 +10,8 @@ const Expenses = (props) => {
   };
   return (
     <>
-      <ExpensesFilter onYearChange={yearChangeHandler} />
       <Card className="expenses">
+        <ExpensesFilter onYearChange={yearChangeHandler} />
         <ExpenseItem
           title={props.items[0].title}
           amount={props.items[0].amount}
