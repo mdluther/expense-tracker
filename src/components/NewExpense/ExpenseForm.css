@@ -1,20 +1,22 @@
 .new-expense__controls {
   display: flex;
-  justify-content: left;
+  padding: 0.5rem;
+  gap: 1.5rem;
+  align-items: flex-end;
 }
 
 .new-expense__control label {
   font-weight: bold;
-  margin-left: 1rem;
   display: block;
   text-align: left;
+  margin-bottom: 1rem;
 }
 
 .new-expense__control input {
-  margin: 1rem 1rem;
   padding: 0.5rem;
   border-radius: 3px;
   border: 1px solid #ccc;
-
   max-width: 100%;
+}
+.new-expense__actions {
 }
