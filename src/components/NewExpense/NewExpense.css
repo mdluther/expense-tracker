@@ -1,13 +1,11 @@
 .new-expense {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-shrink: 1;
+  display: inline-flex;
   background-color: rgb(31, 31, 31);
   padding: 1rem;
+  justify-content: center;
   border-radius: 3px;
-  text-align: center;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+  max-width: 95%;
 }
 
 .new-expense button {
@@ -18,7 +16,7 @@
   background-color: #14005d;
   color: #eeeeee;
   border-radius: 3px;
-  margin-right: 1rem;
+
   font-weight: bold;
 }
 
