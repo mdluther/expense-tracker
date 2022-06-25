@@ -12,12 +12,12 @@ body {
   display: flex;
   justify-content: center;
   align-content: center;
-  text-align: center;
-  margin: 0;
+
   background-color: #24272e;
   color: #dddddd;
 }
 
-.main-heading {
+h2 {
+  margin: 1rem 0 1rem 0;
   text-align: center;
 }
