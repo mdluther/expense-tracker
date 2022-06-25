@@ -1,7 +1,6 @@
 .new-expense__controls {
-  margin: 1rem;
   display: flex;
-  background-color: blue;
+  justify-content: space-between;
 }
 
 .new-expense__control label {
@@ -10,7 +9,6 @@
 }
 
 .new-expense__control input {
-  margin: 1rem;
   border-radius: 3px;
   border: 1px solid #ccc;
 }
