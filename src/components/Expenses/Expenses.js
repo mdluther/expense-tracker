@@ -1,17 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
+import useUpdateLogger from "../../hooks/useUpdateLogger";
 import ExpenseItem from "./ExpenseItem";
 import ExpensesFilter from "./ExpensesFilter";
 import Card from "../UI/Card";
 import "./Expenses.css";
 
 const Expenses = (props) => {
-  const yearChangeHandler = (filteredYear) => {
-    console.log(filteredYear);
+  const [filteredYear, setFilteredYear] = useState();
+
+  const yearChangeHandler = (selectedYear) => {
+    setFilteredYear(selectedYear);
   };
+
+  useUpdateLogger(filteredYear);
+
   return (
     <>
       <Card className="expenses">
-        <ExpensesFilter onYearChange={yearChangeHandler} />
+        <ExpensesFilter
+          selected={filteredYear}
+          onYearChange={yearChangeHandler}
+        />
         <ExpenseItem
           title={props.items[0].title}
           amount={props.items[0].amount}
